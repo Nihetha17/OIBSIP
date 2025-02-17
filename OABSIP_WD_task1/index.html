@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Strength Checker - Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Introduction Section -->
+    <section class="intro-section">
+        <h1>Secure Your Passwords</h1>
+        <p>Our Password Strength Checker ensures that your passwords are strong and secure.</p>
+    </section>
+
+    <!-- Advantages Section -->
+    <section class="advantages-section">
+        <img src="images\bg-2.webp" alt="bg" class="bg-image">
+        <h2>Why Use Our Tool?</h2>
+        <div class="advantages-container">
+            <div class="advantage">
+                <div class="advantage-image">
+                    <img src="images/security.jpeg" alt="Security">
+                </div>
+                <div class="advantage-text">
+                    <p>Enhanced security for all your accounts.</p>
+                </div>
+            </div>
+            <div class="advantage alternate">
+                <div class="advantage-text">
+                    <p>Quick and easy to check password strength.</p>
+                </div>
+                <div class="advantage-image">
+                    <img src="images/easy.png" alt="Ease of Use">
+                </div>
+            </div>
+            <div class="advantage">
+                <div class="advantage-image">
+                    <img src="images/reliable.png" alt="Reliability">
+                </div>
+                <div class="advantage-text">
+                    <p>Accurate and reliable results.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section class="demo-section">
+        <h2>Try It Now!</h2>
+        <div class="password-container">
+            <input type="password" id="password" placeholder="Enter your password">
+            <button id="togglePassword">👁</button>
+        </div>
+        <button onclick="checkStrength()">Check Strength</button>
+        <p id="strength-message"></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

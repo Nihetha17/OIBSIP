@@ -1,0 +1,170 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+/* Common Background Image Style */
+.bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Introduction Section */
+.intro-section {
+    color: white;
+    padding: 50px 20px;
+    position: relative;
+    background-color: #1a2a4b; /* Dark Blue */
+}
+
+/* Advantages Section */
+.advantages-section {
+    padding: 50px 20px;
+    color: white;
+    position: relative;
+    background-image: url('images/bg-2.webp'); /* Keep the background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.advantages-section .bg-image {
+    opacity: 0.2; /* Lighten the background image */
+    z-index: -2; /* Send it to the back */
+}
+
+/* Demo Section */
+.demo-section {
+    background-color: #e0e0e0; /* Light Grey */
+    padding: 50px 20px;
+}
+
+.password-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+input[type="password"] {
+    padding: 10px;
+    width: 250px;
+    box-sizing: border-box; /* Prevents resizing issues */
+    font-size: 16px;
+}
+
+button {
+    padding: 10px;
+    background-color: #007BFF; /* Blue */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Matches input height */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker Blue */
+    transform: scale(1.05);
+}
+
+/* Advantages Section */
+.advantages-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* 3 items per row */
+    gap: 20px;  /* Space between circles */
+    justify-items: center; /* Center horizontally */
+    align-items: center;   /* Center vertically */
+    margin-top: 30px;
+}
+
+.advantage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff; /* White */
+    padding: 20px;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%; /* Make it circular */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Circle colors */
+.advantage:nth-child(1) {
+    background-color: #1c77c3; /* Blue */
+}
+.advantage:nth-child(2) {
+    background-color: #68a0cf; /* Lighter Blue */
+}
+.advantage:nth-child(3) {
+    background-color: #5b8a92; /* Slate Blue */
+}
+
+.advantage:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.advantage-image img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;  /* Make images circular */
+}
+
+.advantage-text {
+    padding: 10px;
+    font-size: 16px;
+    color: #fff; /* White text */
+}
+
+/* Third Advantage (Centered) */
+.advantage.third {
+    grid-column: span 2; /* Make the third advantage span two columns */
+    justify-self: center;  /* Center it horizontally */
+}
+
+/* Show/Hide Password */
+#togglePassword {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .advantage {
+        width: 150px;
+        height: 150px;
+    }
+
+    .advantage-image img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .advantages-container {
+        grid-template-columns: 1fr; /* Stack advantages in one column on smaller screens */
+    }
+
+    .intro-section {
+        padding: 30px 15px;
+    }
+
+    .demo-section {
+        padding: 30px 15px;
+    }
+}
