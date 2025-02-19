@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script> -->
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Web development and Designing enthusiast</p>
+            <h1>Hello, I am <span>Nihetha</span> Mariyappan From India</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="./images/photo.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a passionate IT student with a love for web development and problem-solving. I am someone who is always curious about how things work, especially in the world of tech. Right now, I am on an exciting journey of learning and building as I dive deeper into web development and programming. For me, coding isn’t just about writing lines of code; it’s about solving problems, experimenting, and constantly improving. I enjoy taking on challenges, exploring new technologies, and pushing myself to get better every day.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <p><b><span>Programming Languages:</span></b></p>
+                        <li>C, C++</li>
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>HTML, CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Web Development & Designing Internship</span><br>OASIS Infobyte (1 Month)</li>
+                        <li><span>Python Django Internship</span><br>Suven Consultants and Technology Pvt. Ltd. (1 Month)</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023 - 2027</span><br>B.Tech. (IT), Mohamed Sathak A.J. College of Engineering, Chennai</li>
+                        <li><span>2021 - 2023</span><br>HSC, A.R.L.M Matric Higher Secondary School, Cuddalore</li>
+                        <li><span>2019 - 2021</span><br>SSLC, Lakshmi Matriculation School, Cuddalore</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="certifications">
+                    <ul>
+                        <li>
+                            <span>Artificial Intelligence Fundamentals</span> - Great Learning Academy
+                            <a href="./images/ai_fundamentals.pdf" download>(Download)</a>
+                        </li>
+                        <li>
+                            <span>Responsive Web Design Developer Certification</span> - FreeCodeCamp
+                            <a href="./images/responsive_web.pdf" download>(Download)</a>
+                        </li>
+                        <li>
+                            <span>Python Certification</span> - GUVI IITM
+                            <a href="./images/python_guvi.pdf" download>(Download)</a>
+                        </li>
+                        <li>
+                            <span>Introduction to Python</span> - CEPYTIIN, provided by IBM
+                            <a href="./images/intro_python_ibm.pdf" download>(Download)</a>
+                        </li>
+                        <li>
+                            <span>Java Programming</span> - Great Learning Academy
+                            <a href="./images/java_programming.pdf" download>(Download)</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web Design</h2>
+                <p>I design websites that don't just look good but also feel right—clean, responsive, and easy to navigate.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>Landing Page Design</h2>
+                <p>I build landing pages that grab attention, communicate clearly, and guide users to take action effortlessly.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>I create app designs that are simple to use and visually appealing, making sure users enjoy every tap and swipe.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="./images/dicegame.jpg">
+                <div class="layer">
+                    <h3>Dice Game</h3>
+                    <p>🎲 Roll virtual dice and see who wins! Quick, fun, and easy to play.</p>
+                    <a href="./images/dice/index.html" target="_blank">
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./images/tictactoe.jpg">
+                <div class="layer">
+                    <h3>Tic Tac Toe Game</h3>
+                    <p>❌⭕ Play a classic 3x3 grid game to get three in a row before your opponent.</p>
+                    <a href="./images/tictactoe/index.html" target="_blank">
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./images/rockpaperscissors.jpg">
+                <div class="layer">
+                    <h3>Rock Paper Scissors Game</h3>
+                    <p>✊📄✂️ Choose Rock, Paper, or Scissors and challenge the computer!</p>
+                    <a href="./images/rockpaperscissors/index.html" target="_blank">
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> nihethanihe@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> 7305703854</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/nihetha-nihe-b07a5b2a5/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Nihetha17/OIBSIP"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="./images/my_resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy; Nihetha.</p>
+    </div>
+</div>
+
+<script src="./script.js"></script>
+</body>
+</html>
